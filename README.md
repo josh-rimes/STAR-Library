@@ -1,6 +1,6 @@
 # STAR-library
 
-This repository contains a minimal STAR Library demo: a FastAPI backend (SQLModel) and a Vite + React frontend.
+This repository contains the STAR Library project using a FastAPI backend (SQLModel) and a Vite + React frontend.
 
 Overview
 
@@ -9,7 +9,7 @@ Overview
 
 Recommended local setup (Windows PowerShell)
 
-1. Backend — create a venv, install deps, set env, run
+1. Backend - create a venv, install deps, set env, run
 
 ```powershell
 cd backend
@@ -34,7 +34,7 @@ Notes:
 
 - On startup the backend will create tables and seed sample data (4 authors, 15 books, 5 readers) if the DB is empty.
 
-2. Frontend — install deps and run dev server
+2. Frontend - install deps and run dev server
 
 ```powershell
 cd frontend
