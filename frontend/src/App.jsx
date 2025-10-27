@@ -115,7 +115,7 @@ export default function App() {
               {popularBooks.slice(0, 5).map(b => (
                 <li key={b.id} className="book-item">
                   <div className="title">{b.title}</div>
-                  <div className="meta">by {b.author ? b.author.name : 'Unknown'} — {b.readers} readers</div>
+                  <div className="meta">by {b.author ? b.author.name : 'Unknown'} - {b.readers} readers</div>
                 </li>
               ))}
             </ol>
@@ -138,10 +138,10 @@ export default function App() {
           <div className="stat">
             <div className="label">Your top 3 authors</div>
             <div className="value">
-              {userTopAuthors.length === 0 ? <div>—</div> : (
+              {userTopAuthors.length === 0 ? <div>-</div> : (
                 <ol>
                   {userTopAuthors.map(u => (
-                    <li key={u.author.id}>{u.author.name} — {u.count} book{u.count !== 1 ? 's' : ''}</li>
+                    <li key={u.author.id}>{u.author.name} - {u.count} book{u.count !== 1 ? 's' : ''}</li>
                   ))}
                 </ol>
               )}
