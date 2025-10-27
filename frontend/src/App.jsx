@@ -106,12 +106,13 @@ export default function App() {
 
       <div className="layout">
         <section className="panel books">
-          <h2>Most Popular Books</h2>
+          <h2>Top 5 Most Popular Books</h2>
+          <div className="note">Showing top 5 of {books.length} books</div>
           {popularBooks.length === 0 ? (
             <p>No books available</p>
           ) : (
             <ol className="book-list">
-              {popularBooks.map(b => (
+              {popularBooks.slice(0, 5).map(b => (
                 <li key={b.id} className="book-item">
                   <div className="title">{b.title}</div>
                   <div className="meta">by {b.author ? b.author.name : 'Unknown'} — {b.readers} readers</div>
