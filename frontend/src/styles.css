@@ -1,7 +1,19 @@
-body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; padding: 24px; }
-.container { max-width: 720px; margin: 0 auto; }
-.item-form { display:flex; gap:8px; margin-bottom:16px }
-.item-form input { flex:1; padding:8px }
-.items { list-style:none; padding:0 }
-.items li { padding:8px; border:1px solid #eee; margin-bottom:8px; border-radius:4px }
-.items .desc { color:#555; font-size:0.95rem }
+.body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+.container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+header { display:flex; justify-content:space-between; align-items:center; margin-bottom:16px }
+.user { color:#333 }
+.layout { display:grid; grid-template-columns: 1fr 320px; gap:20px }
+.panel { background:#fff; border:1px solid #eee; padding:16px; border-radius:8px; box-shadow: 0 1px 3px rgba(0,0,0,0.03) }
+.books .book-list { list-style:none; padding:0; margin:0 }
+.book-item { padding:10px 8px; border-bottom:1px solid #f2f2f2 }
+.book-item:last-child { border-bottom: none }
+.title { font-weight:600 }
+.meta { color:#666; font-size:0.9rem }
+.dashboard .stat { margin-bottom:12px }
+.dashboard .label { color:#666; font-size:0.85rem }
+.dashboard .value { font-weight:600; margin-top:6px }
+.error { color:crimson }
+
+@media (max-width: 860px) {
+	.layout { grid-template-columns: 1fr; }
+}
