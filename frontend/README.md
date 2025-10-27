@@ -1,18 +1,27 @@
 # Frontend (React + Vite)
 
-Quick start (Windows PowerShell):
+This folder contains a small React single-page app (Vite). The app expects the backend API at http://127.0.0.1:8000.
 
-1. Install dependencies:
+Quick start (Windows PowerShell)
 
 ```powershell
 cd frontend
+# install dependencies
 npm install
-```
 
-2. Run the dev server:
-
-```powershell
+# run dev server (default port 5173)
 npm run dev
 ```
 
-Open http://localhost:5173 to view the app.
+Open http://localhost:5173
+
+Build for production
+
+```powershell
+npm run build
+npm run preview
+```
+
+Notes
+
+- The project uses Vite 4.x and a compatible `@vitejs/plugin-react`. If you change plugin versions, ensure the Vite version is compatible.
